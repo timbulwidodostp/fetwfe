@@ -4,8 +4,10 @@
 # Fused extended two-way fixed effects Use fetwfe With (In) R Software
 install.packages("fetwfe")
 install.packages("bacondecomp")
-library("fetwfe")
+install.packages("lme4")
+library("lme4")
 library("bacondecomp")
+library("fetwfe")
 # Estimate Fused extended two-way fixed effects Use fetwfe With (In) R Software
 fetwfe = read.csv("https://raw.githubusercontent.com/timbulwidodostp/fetwfe/main/fetwfe/fetwfe.csv",sep = ";")
 fetwfe$l_homicide <- log(fetwfe$homicide)
